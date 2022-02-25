@@ -254,7 +254,7 @@ function MessageList(props) {
                             <Text
                                 styleSheet={{
                                     fontSize: '12px',
-                                    marginLeft: '700px',
+                                    marginLeft: '1000px',
                                     color: appConfig.theme.colors.neutrals[300],
                                 }}
                                 tag="span"
