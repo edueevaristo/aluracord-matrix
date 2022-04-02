@@ -2,7 +2,6 @@ import { Box, Button, Text, TextField, Image } from '@skynexui/components';
 import React from 'react';
 import { useRouter } from 'next/router'; // chamada de página com o Router no Next
 import appConfig from '../config.json';
-import Link from 'next/link';
 
 
 function Titulo(props) {
@@ -13,7 +12,7 @@ function Titulo(props) {
             <style jsx>{`
             ${Tag} {
                 color: ${appConfig.theme.colors.neutrals['000']};
-                font-size: 24px;
+                font-size: 22px;
                 font-weight: 600;
             }
             `}</style>
@@ -26,7 +25,7 @@ export default function PaginaInicial() {
     const [username, setUsername] = React.useState('');
     const roteamento = useRouter();
     const picUsuarioNull = 'https://i.imgur.com/P3R3KYn.png' // Deixando o campo de usuário em branco e com imagem de entrada
-    
+
     return (
         <>
             <Box
@@ -49,10 +48,10 @@ export default function PaginaInicial() {
                         width: '100%', maxWidth: '700px',
                         borderRadius: '5px', padding: '32px', margin: '16px',
                         boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-                        backgroundColor: appConfig.theme.colors.neutrals[700],
+                        backgroundColor: appConfig.theme.colors.neutrals[999],
                         background: 'rgba(255, 255, 255, 0)',
                         backdropFilter: 'blur(8.6px)',
-                        border: '1px solid rgba(255, 255, 255, 1)'
+                        border: '2px solid rgba(255, 255, 255, 1)'
                     }}
                 >
                     {/* Formulário */}
@@ -76,7 +75,7 @@ export default function PaginaInicial() {
 
                         {<TextField
                             autocomplete="off"
-                            placeholder='Insira seu usuário do Github 🐝'
+                            placeholder='Insira seu usuário do Github'
                             value={username}
                             onChange={function (event) {
                                 const valueUser = event.target.value;
@@ -86,9 +85,9 @@ export default function PaginaInicial() {
                             fullWidth
                             textFieldColors={{
                                 neutral: {
-                                    textColor: appConfig.theme.colors.primary[122],
+                                    textColor: appConfig.theme.colors.neutrals[999],
                                     mainColor: appConfig.theme.colors.neutrals["000"],
-                                    mainColorHighlight: appConfig.theme.colors.primary[122],
+                                    mainColorHighlight: appConfig.theme.colors.primary["000"],
                                     backgroundColor: appConfig.theme.colors.neutrals["000"],
                                 },
                             }}
@@ -100,16 +99,16 @@ export default function PaginaInicial() {
                             fullWidth
                             buttonColors={{
                                 contrastColor: appConfig.theme.colors.primary[121],
-                                mainColor: appConfig.theme.colors.primary[122],
-                                mainColorLight: appConfig.theme.colors.primary[233],
+                                mainColor: appConfig.theme.colors.neutrals["000"],
+                                mainColorLight: appConfig.theme.colors.neutrals["000"],
                                 mainColorStrong: appConfig.theme.colors.primary[122],
                                 borderColor: appConfig.theme.colors.neutrals["000"],
                             }}
                         />
-                        
-                        
+
+
                     </Box>
-                    
+
 
                     {/* Formulário */}
 
@@ -152,7 +151,7 @@ export default function PaginaInicial() {
                             {username}
                         </Text>
                     </Box>
-    
+
                     {/* Photo Area */}
                 </Box>
             </Box>
