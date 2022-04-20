@@ -3,7 +3,7 @@ Projeto desenvolvido na ImersÃ£o React da Alura! Com @omariosouto @peas @alura ð
 <a href="https://aluracord-matrix-chi-eight.vercel.app/">Acesso ao projeto, basta clicar aqui</a>
 <hr><br>
 <h1 align="center">Tela de Login</h1>
-<p align="center"><img src="https://github.com/edueevaristo/aluracord-matrix/blob/main/src/components/PaginaInicial.png"></a>
+<p align="center"><img src="https://i.imgur.com/x3CPy3t.png"></a>
 <hr>
 <h1 align="center">Chat de Mensagens</h1>
-<p align="center"><img src="https://github.com/edueevaristo/aluracord-matrix/blob/main/src/components/Chat%20de%20Mensagens.png">
+<p align="center"><img src="https://i.imgur.com/9wjfGS8.png">
